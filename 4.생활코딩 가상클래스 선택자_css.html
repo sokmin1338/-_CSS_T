@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            a:link{
+                color:black;
+            }
+            a:visited{
+                color:red;
+            }
+            a:hover{
+                color:yellow;
+            }
+            a:active{
+                color:green;
+            }
+            a:focus{
+                color:aqua;
+            }
+            input:focus{
+                background-color: pink;
+                color:black;
+            }
+        </style>
+        <!--두 태그가 동급이면 CSS는 뒤쪽에 있는 선언을 선택한다.-->
+    <body>
+        <a href="https://www.naver.com">방문함</a>
+        <a href="https://www.kakao.com">방문안함</a>
+        <input type="text">
+    </body>
+</html>
+
+:visited{} : 방문했던 링크  (일부 속성만 사용 가능함)
+:link{} : 방문하지 않은 링크
+:active{} : 클릭하는 순간
+:hover{} : 마우스를 올려놓는 순간 (여러가지 속성으로 사용가능)
+:focus{} : 포커싱 해줌
